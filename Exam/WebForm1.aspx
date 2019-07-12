@@ -1,15 +1,24 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Exam.WebForm1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Exam</title>
+﻿<%@ Page Language="C#" %>
+<%
+    Response.Write("<header>Exam for job Meyer</header> <br>");
+%>
+<script runat="server">
+    void Page_Load()
+    {
+        String seach = txtName.Text;
+          Response.Write(seach);
+        //this.txtName.Text = seach;
+    }
+</script>
+<html>
+<head>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
+    <form runat="server">
+
+        <asp:Label id="lblText" runat="server" text="Seach User"></asp:Label>
+        <asp:TextBox id="txtName" runat="server"></asp:TextBox>
+        <asp:Button runat="server" id="seaching" text="Seach"/>
     </form>
 </body>
 </html>
