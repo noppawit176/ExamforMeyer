@@ -1,24 +1,40 @@
 ﻿<%@ Page Language="C#" %>
-<%
-    Response.Write("<header>Exam for job Meyer</header> <br>");
-%>
+
 <script runat="server">
     void Page_Load()
     {
         String seach = txtName.Text;
-          Response.Write(seach);
+          //Response.Write(seach);
         //this.txtName.Text = seach;
     }
 </script>
 <html>
+   
 <head>
-</head>
-<body>
-    <form runat="server">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <div class="jumbotron text-center">
+                    <h1>Exam for job Meyer</h1> 
+                <form runat="server">
 
         <asp:Label id="lblText" runat="server" text="Seach User"></asp:Label>
         <asp:TextBox id="txtName" runat="server"></asp:TextBox>
         <asp:Button runat="server" id="seaching" text="Seach"/>
     </form>
+            </div>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td>Name</td><td>Re</td><td>3</td>
+
+        </tr>
+      
+    </table>
+    
 </body>
 </html>
